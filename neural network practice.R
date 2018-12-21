@@ -1,40 +1,4 @@
 #neural network example
-#  ------------------------------------------------------------------
-#  |PROGRAM NAME: NEURALNET_PKG_R
-#  |DATE: 12/3/10
-#  |CREATED BY: MATT BOGARD 
-#  |PROJECT FILE:   P:\R  Code References\Data Mining_R           
-#  |----------------------------------------------------------------
-#  | PURPOSE: DEMO OF THE 'neuralnet' PACKAGE AND OUTPUT INTERPRETATION              
-#  | 
-#  |  ADAPTED FROM:  neuralnet: Training of Neural Networks
-#  |    by Frauke Günther and Stefan Fritsch The R Journal Vol. 2/1, June 2010 
-#  |    ISSN 2073-4859  (LOCATED: P:\TOOLS AND REFERENCES (Copy)\R References\Neural Networks
-#  | 
-#  | 
-#  |------------------------------------------------------------------
-#  |DATA USED: 'infert' FROM THE 'datasets' LIBRARY              
-#  |------------------------------------------------------------------
-#  |CONTENTS:               
-#  |
-#  |  PART 1: get the data 
-#  |  PART 2: train the network
-#  |  PART 3: 
-#  |  PART 4: 
-#  |  PART 5: 
-#  |------------------------------------------------------------------
-#  |COMMENTS:               
-#  |
-#  |-----------------------------------------------------------------
-#  |UPDATES:               
-#  |
-#  |
-#  |------------------------------------------------------------------
-
-#  *------------------------------------------------------------------*
-#  | get the data
-#  *------------------------------------------------------------------* 
-
 library(datasets)
 
 names(infert)
@@ -50,9 +14,9 @@ nn <- neuralnet(
   data=infert, hidden=2, err.fct="ce",
   linear.output=FALSE)
 
-#  *------------------------------------------------------------------*
-#  | output training results
-#  *------------------------------------------------------------------*  
+################
+# output training results
+###############
 
 # basic
 nn
